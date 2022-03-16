@@ -1,0 +1,173 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API Documentation",
+        "description": "This is API for people registration",
+        "Version": "1.0.0",
+        "contact": {
+            "email": "jleandro.dev@gmail.com"
+        }
+    },
+    "paths": {
+        "/customers": {
+            "post": {
+                "tags": ["Customers"],
+                "summary": "Create a customer",
+                "description": "Create a new customer",
+                "requestBody": {
+                    "content": {
+                        "application/json":{
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "cpf": {
+                                        "type": "string"
+                                    },
+                                    "birth": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "name": "Customer name sample",
+                                    "cpf": "000.000.000-00",
+                                    "birth": "dd/mm/yyyy"
+                                    
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "400": {
+                        "description": "an account with this CPF already exists"
+                    }
+                   
+                }
+            },
+            "get": {
+                "tags": ["Customers"],
+                "summary": "List all customers",
+                "description": "List all customers",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "cpf": {
+                                                "type": "string"
+                                            },
+                                            "birth": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        },
+        "/customers/:id": {
+            "get": {
+                "tags": ["Customers"],
+                "summary": "Show a customer",
+                "description": "Show a customer",
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "cpf": {
+                                            "type": "string"
+                                        },
+                                        "birth": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+            },
+            "put": {
+                "tags": ["Customers"],
+                "summary": "Update a customer",
+                "description": "Update a new customer",
+                "requestBody": {
+                    "content": {
+                        "application/json":{
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "cpf": {
+                                        "type": "string"
+                                    },
+                                    "birth": {
+                                        "type": "string"
+                                    }
+                                },
+                                "example": {
+                                    "name": "Customer name sample",
+                                    "cpf": "000.000.000-00",
+                                    "birth": "dd/mm/yyyy"
+                                    
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created"
+                    },
+                    "400": {
+                        "description": "an account with this CPF already exists"
+                    }
+                   
+                }
+            },
+            "delete": {
+                "tags": ["Customers"],
+                "summary": "Delete a customer",
+                "description": "Delete a customer",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                        
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    
+}
