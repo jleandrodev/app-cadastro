@@ -23,9 +23,8 @@
 
 ### Rodando o projeto:
 
-* Na raiz do projeto executar
-
-* docker compose up -d
+#### Na raiz do projeto executar:
+     docker compose up -d
 
 * Acesso ao front end: http://localhost:3000
 
