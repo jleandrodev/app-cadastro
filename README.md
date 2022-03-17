@@ -7,10 +7,10 @@
 ## 🏁 Tópicos
 
 <!--ts-->
-   * [API](#API:)
-   * [APP](#APP)
-   * [Instruções](#pré-requisitos)
-   * [Rotas da API](#-rodando-o-servidor)
+   * [API](#api)
+   * [APP](#app)
+   * [Instruções](#instruções)
+   * [Rotas da API](#rotas-da-api)
    * [Tecnologias](#-tecnologias)
 <!--te-->
 #### Api:
