@@ -1,14 +1,25 @@
 # Crud Cadastro de Clientes
 
-#### Api: Api foi desenvolvida em node.js  
+<h4 align="center"> 
+	🚧  Cadastro de Clientes 🚀 Concluído! 🚧
+</h4>
 
-#### App: front-end desenvolvido em react
+## 🏁 Tópicos
 
-#### API
-Desenvolvida com o framework express, com o banco de dados Mongodb. Documentação com Swagger.
+<!--ts-->
+   * [API](#API:)
+   * [APP](#APP)
+   * [Instruções](#pré-requisitos)
+   * [Rotas da API](#-rodando-o-servidor)
+   * [Tecnologias](#-tecnologias)
+<!--te-->
+#### Api:
+     Api desenvolvida em node.js, utilizando o framework express e banco de dados Mongodb. Documentação com Swagger.
 
-#### APP
-Bem basico e facil de usar.
+#### App:
+     front-end desenvolvido em react
+
+
 
 ### Instrucoes:
 
@@ -20,7 +31,7 @@ Bem basico e facil de usar.
 
 * O banco de dados esta rodando na porta 27017, a API na porta 3333 e frontend na porta 3000.
 
-## API:
+## ROTAS DA API:
 
 #### POST: http://localhost:3333/customers/
 
@@ -42,7 +53,7 @@ Bem basico e facil de usar.
 	"name": "jhonatan",
 	"cpf": "71899949046",
 	"birth": "18-12-1997"
-}
+    }
 
 ## GET: http://localhost:3333/customers/
 
@@ -69,7 +80,7 @@ Bem basico e facil de usar.
 	"name": "jhonatan",
 	"cpf": "71899949046",
 	"birth": "18-12-1997"
-}
+    }
 
 
 ## DELETE: http://localhost:3333/customers/ID
@@ -77,7 +88,11 @@ Bem basico e facil de usar.
 ###### Headers Obrigatorios: headers {  "Content-type": "application/json" }
 
 
+### 🛠️ Tecnologias
 
+Este projeto foi construido com:
 
-
-
+- [Node.js](https://nodejs.org/en/)<br><img align="center" alt="NodeJs" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+- [Express](https://expressjs.com/)<br><img align="center" alt="Express" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+- [MongoDB](https://mongodb.com/)<br><img align="center" alt="MongoDB" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
+- [Reactjs](https://reactjs.org/)<br><img align="center" alt="React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
