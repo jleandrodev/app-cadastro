@@ -9,9 +9,9 @@
 <!--ts-->
    * [API](#api)
    * [APP](#app)
-   * [Instruções](#instruções)
+   * [Rodando o projeto](#rodando-o-projeto)
    * [Rotas da API](#rotas-da-api)
-   * [Tecnologias](#-tecnologias)
+   * [Tecnologias](#tecnologias)
 <!--te-->
 #### Api:
      Api desenvolvida em node.js, utilizando o framework express e banco de dados Mongodb. Documentação com Swagger.
@@ -21,7 +21,7 @@
 
 
 
-### Instrucoes:
+### Rodando o projeto:
 
 * Na raiz do projeto executar
 
